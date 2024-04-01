@@ -16,6 +16,6 @@ function toggleContent() {
 
 moreBtn.addEventListener("click", toggleContent);
 
-console.log('new branch');
+console.log('new');
 
 
