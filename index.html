@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocer</title>
+
+   <!--  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+   <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<nav id="sticky">
+    <div class="container" id="nav">
+        <p class="text-white text-2xl font-bold">Emmanuel Balderas Bequer | CENTRO</p>
+    </div>
+<!--     <div class="filler"></div> -->
+</nav>
+
+
+<div class="container" id="intro">
+    <p>Objeto y Espacio</p>
+    <p id="reconocer">Reconocer</p>
+</div>
+
+<div class="container" id="justification">
+    <div class="text" expandable="true">
+        <p id="question">
+        ¿Cómo utilizar el papel bond para crear texturas, y cómo éstas crean diferentes composiciones de luz, color, opacidad, en los objetos 3D?
+    </p>
+    <p id="text">
+        En este proyecto quise explorar el papel bond de manera digital en texturas, es decir, cómo sus dobleces, ejes, colores, sombras escaneados en 2D, pueden afectar la textura de un objeto digital 3D. Para realizar esto tuve que partir pedazos de papel bond reciclado en pedazos de varios tamaños, luego las organicé de 3 diferentes maneras: La primera utilicé tamaños mixtos, otra solo los pedazos grandes, otro con un pliego entero arrugado, y otro solo pedazos pequeños. Después, los escaneé con un scanner 2D, y utilicé los escaneos para crear las texturas en Blender. Para la figura 3D utilicé el sensor LIDAR de mi celular para generar un modelo 3D de una réplica del David de Michelangelo miniatura. Edité un poco las imágenes de las texturas para darles más contraste, e hice una textura en colores opuestos (negros). 
+    </p>
+    </div>
+    <button class="more-button" id="more-button">More</button>
+</div>
+<!-- Main Content -->
+<div class="container mx-auto px-4 py-8">
+
+    <!-- Model Section 1 -->
+    <div id="model-container-1" class="model-container">
+        <p>Modelo 1: Tamaño de Pliegos Mixto</p>
+        <model-viewer src="./assets/all-folded.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models h-[3rem]"></model-viewer>
+        <div class="model-description">
+        </div>
+    </div>
+
+    <!-- Model Section 2 -->
+    <div id="model-container-2" class="model-container">
+        <p>Modelo 2: Pliegos Grandes</p>
+        <model-viewer src="./assets/big.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
+        <div class="model-description">
+        </div>
+    </div>
+
+    <!-- Model Section 3 -->
+    <div id="model-container-3" class="model-container">
+        <p>Modelo 3: Pliegos Pequeños</p>
+        <model-viewer src="./assets/small.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
+        <div class="model-description">
+        </div>
+    </div>
+
+    <!-- Model Section 4 -->
+    <div id="model-container-4" class="model-container">
+        <p>Modelo 4: Colores Opuestos</p>
+        <model-viewer src="./assets/dark.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
+        <div class="model-description">
+        </div>
+    </div>
+
+    <!-- Model Section 5 -->
+    <div id="model-container-5" class="model-container">
+        <p>Modelo 5: Pliego Entero Arrugado</p>
+        <model-viewer src="./assets/rugged.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
+        <div class="model-description">
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-800 py-4 mt-8 text-white text-center">
+    <p>Emmanuel Balderas Bequer - CENTRO</p>
+</footer>
+<script async src="./script.js"></script>
+</body>
+</html>
