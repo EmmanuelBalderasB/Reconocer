@@ -115,7 +115,8 @@ nav .container {
 
 footer {
   padding: 1rem;
-  color: #555;
+  color: #fff;
+  background-color: #000;
 }
 
 @media (max-width: 1000px) {
