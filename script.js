@@ -16,6 +16,6 @@ function toggleContent() {
 
 moreBtn.addEventListener("click", toggleContent);
 
-console.log('error test');
+console.log('new');
 
 
