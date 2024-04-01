@@ -1,5 +1,5 @@
 const models = document.getElementsByClassName("models");
-const moreBtn = document.getElementById("more-button");
+// const moreBtn = document.getElementById("more-button");
 //console.log(models);
 const just = document.getElementById("justification");
 const paths = ["./assets/all-folded.glb", "./assets/big.glb", "./assets/small.glb", "./assets/dark.glb", "./assets/rugged.glb"];
@@ -14,8 +14,6 @@ function toggleContent() {
   just.style.maxHeight = "none";
 }
 
-moreBtn.addEventListener("click", toggleContent);
-
-console.log('new');
+// moreBtn.addEventListener("click", toggleContent);
 
 
