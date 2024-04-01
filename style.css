@@ -10,7 +10,6 @@ nav {
   background-color: #000000;
   color: #fff;
   padding: 0.1rem;
-  position: sticky;
   top: 0;
   text-align: center;
 
@@ -34,7 +33,7 @@ nav .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 10rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
   height: 30rem;
   font-size: 6rem;
   font-weight: 300;
@@ -84,7 +83,15 @@ nav .container {
   padding: 0 1rem;
 }
 
+div#all-models {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
 .model-container {
+  width: 100%;
   margin-bottom: 2rem;
   padding: 1rem;
   background-color: #fbfbfb;
@@ -117,6 +124,28 @@ footer {
   padding: 1rem;
   color: #fff;
   background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div.icon-container {
+
+  margin-right: 7rem;
+
+
+}
+.social-icons {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .75rem;
+}
+
+@media (max-width: 1200px) {
+
+.model-container {
+  width: 80vw;
+}
 }
 
 @media (max-width: 1000px) {
@@ -136,11 +165,17 @@ footer {
   font-size: large;
   line-height: 1.4rem;
 }
+.model-container {
+  width: 80vw;
+}
     
 }
 
 @media (max-width: 800px) {
   /* … */
+   nav {
+   max-width: 100vw;
+  }
   .container#justification {
   padding: 2rem;
   margin: 0 auto 5rem auto;
@@ -160,11 +195,17 @@ footer {
 #justification #text {
     line-height: 1.3rem;
 }
-    
+   
+.model-container {
+  width: 60vw;
+}
 }
 
 @media (max-width: 580px) {
   /* … */
+  nav {
+    max-width: 100vw;
+  }
   .container#justification {
   padding: 2rem;
   margin: 0 auto 5rem auto;
@@ -184,7 +225,9 @@ footer {
 #justification #text {
     line-height: 1.3rem;
 }
-    
+.models {
+  height: 200px;
+}
 }
 
 @media (max-width: 380px) {

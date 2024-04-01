@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -39,10 +40,10 @@
         En este proyecto quise explorar el papel bond de manera digital en texturas, es decir, cómo sus dobleces, ejes, colores, sombras escaneados en 2D, pueden afectar la textura de un objeto digital 3D. Para realizar esto tuve que partir pedazos de papel bond reciclado en pedazos de varios tamaños, luego las organicé de 3 diferentes maneras: La primera utilicé tamaños mixtos, otra solo los pedazos grandes, otro con un pliego entero arrugado, y otro solo pedazos pequeños. Después, los escaneé con un scanner 2D, y utilicé los escaneos para crear las texturas en Blender. Para la figura 3D utilicé el sensor LIDAR de mi celular para generar un modelo 3D de una réplica del David de Michelangelo miniatura. Edité un poco las imágenes de las texturas para darles más contraste, e hice una textura en colores opuestos (negros). 
     </p>
     </div>
-    <button class="more-button" id="more-button">More</button>
+    <!-- <button class="more-button" id="more-button">More</button> -->
 </div>
 <!-- Main Content -->
-<div class="container mx-auto px-4 py-8">
+<div class="container" id="all-models">
 
     <!-- Model Section 1 -->
     <div id="model-container-1" class="model-container">
@@ -88,7 +89,18 @@
 
 <!-- Footer -->
 <footer class="bg-gray-800 py-4 mt-8 text-white text-center">
-    <p> © Emmanuel Balderas Bequer 2024 | CENTRO</p>
+    <div class="attribution">
+        <p> © Emmanuel Balderas Bequer 2024 | CENTRO</p>
+    </div>
+    <div class="icon-container">
+        <a href="https://www.instagram.com/whosbecker/" target="_blank" id="instagram-link">
+            <img src="./assets/instagram.png" alt="instagram icon" class="social-icons" id="instagram"> 
+        </a>
+         <a href="https://github.com/EmmanuelBalderasB/Reconocer" target="_blank" id="github-link">
+            <img src="./assets/github.png" alt="github icon" class="social-icons" id="github"> 
+        </a>
+        
+    </div>
 </footer>
 <script async src="./script.js"></script>
 </body>
