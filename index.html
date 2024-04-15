@@ -47,13 +47,16 @@
 <div class="container" id="all-models">
 
     <!-- Model Section 1 -->
-    <form action="#">
-        <label for="model-select">Modelo 3D</label>
+    <div class="select-wrapper">
+        <div class="selection-set">
+             <label for="model-select">Modelo 3D</label>
         <select name="model-select" id="model-select">
             <option value="sphere">Sphere</option>
             <option value="david">David</option>
         </select>
-        <label for="texture-type-select">Textura</label>
+        </div>
+        <div class="selection-set">
+            <label for="texture-type-select">Textura</label>
         <select name="texture-type-select" id="texture-type-select">
             <option value="none">...</option>
             <option value="all-folded">Tamaño de Pliegos Mixto</option>
@@ -61,17 +64,20 @@
             <option value="small">Tamaño de Pliegos Pequeño</option>
             <option value="rugged">Pliego Entero Arrugado</option>
         </select>
-        <label for="color-select">Color</label>
+        </div>
+        <div class="selection-set">
+            <label for="color-select">Color</label>
         <select name="color-select" id="color-select">
             <option value="light">Blanco</option>
         </select>
+        </div>
+    </div>
         <div id="model-container-1" class="model-card">
-        <p>Modelo 1: Tamaño de Pliegos Mixto</p>
+        <p id="model-name"></p>
         <div class="model-container">
             <model-viewer id="model-viewer" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
         </div>
     </div>
-    </form>
     
 
 </div>

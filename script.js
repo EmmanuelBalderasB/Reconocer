@@ -4,6 +4,7 @@ const just = document.getElementById("justification");
 const modelSelector = document.querySelector("#model-select");
 const textureSelector = document.querySelector("#texture-type-select");
 const colorSelector = document.querySelector("#color-select");
+const modelName = document.querySelector("#model-name");
 
 const colorOption1 = document.createElement("option");
 colorOption1.setAttribute("value", "dark");
@@ -34,7 +35,7 @@ function updatePath(e) {
     viewer.setAttribute("src", queryPath);
   }
   
-  
+  modelName.innerText = textureSelector.options[textureSelector.selectedIndex].innerText;
 }
 
 function handleDavidChange() {
