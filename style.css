@@ -110,6 +110,7 @@ div#all-models {
   margin-bottom: 1rem;
   color: #333;
   height: fit-content;
+  margin-top: 0;
 }
 .models {
   width: 47%;
