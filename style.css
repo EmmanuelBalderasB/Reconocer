@@ -179,6 +179,10 @@ footer div.icon-container {
 .model-card {
   width: 80vw;
 }
+
+.models {
+  height: 350px;
+}
     
 }
 
@@ -210,6 +214,10 @@ footer div.icon-container {
 .model-card {
   width: 60vw;
 }
+
+.models {
+  height: 250px;
+}
 }
 
 @media (max-width: 580px) {
@@ -237,7 +245,7 @@ footer div.icon-container {
     line-height: 1.3rem;
 }
 .models {
-  height: 200px;
+  height: 150px;
 }
 }
 
