@@ -41,6 +41,10 @@ nav .container {
   background-color: #000;
 }
 
+#justification h2 {
+  text-align: center;
+}
+
 #intro p {
   margin: 0;
   filter: blur(5px);
@@ -64,6 +68,7 @@ nav .container {
 }
 
 #justification {
+  text-align:justify;
   padding: 3rem;
   margin: 0 auto 5rem auto;
   font-weight: 500;
