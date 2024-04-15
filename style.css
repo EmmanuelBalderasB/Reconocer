@@ -90,22 +90,24 @@ div#all-models {
   width: 100vw;
 }
 
-.model-container {
-  width: 80%;
+.model-card {
+  width: 80vw;
   margin-bottom: 2rem;
   padding: 1rem;
   background-color: #fbfbfb;
   border-radius: 0.5rem;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-.model-container p {
+.model-card p {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #333;
+  height: fit-content;
 }
 .models {
-  width: 100%;
+  width: 47%;
   height: 500px;
   background-color: #000000;
   border-radius: 0.5rem;
@@ -115,7 +117,11 @@ div#all-models {
   font-size: 1rem;
   color: #555;
 }
-
+.model-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 #model-container-1 {
   margin-top: 2rem;
 }
@@ -143,7 +149,7 @@ footer div.icon-container {
 
 @media (max-width: 1200px) {
 
-.model-container {
+.model-card {
   width: 80vw;
 }
 }
@@ -165,7 +171,7 @@ footer div.icon-container {
   font-size: large;
   line-height: 1.4rem;
 }
-.model-container {
+.model-card {
   width: 80vw;
 }
     
@@ -196,7 +202,7 @@ footer div.icon-container {
     line-height: 1.3rem;
 }
    
-.model-container {
+.model-card {
   width: 60vw;
 }
 }
