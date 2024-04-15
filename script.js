@@ -21,11 +21,18 @@ function updatePath(e) {
   const colorPath = colorSelector.options[colorSelector.selectedIndex].value;
 
   queryPath = '';
-  queryPath = `${assetPath}${modelPath}-${texturePath}-${colorPath}`;
+  queryPath = `${assetPath}${modelPath}-${texturePath}-${colorPath}.glb`;
 
   const viewer = document.getElementById("model-viewer");
   
-  viewer.setAttribute('src', queryPath)
+  if (viewer.hasAttribute('src')) {
+    viewer.removeAttribute('src');
+    viewer.toggleAttribute('src', true)
+    viewer.setAttribute("src", queryPath);
+  } else {
+    viewer.toggleAttribute("src", true);
+    viewer.setAttribute("src", queryPath);
+  }
   
   
 }
