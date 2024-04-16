@@ -47,49 +47,38 @@
 <div class="container" id="all-models">
 
     <!-- Model Section 1 -->
-    <div id="model-container-1" class="model-card">
-        <p>Modelo 1: Tamaño de Pliegos Mixto</p>
-        <div class="model-container">
-            <model-viewer src="./assets/sphere-all.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models h-[3rem]"></model-viewer>
-            <model-viewer src="./assets/all-folded.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models h-[3rem]"></model-viewer>
+    <div class="select-wrapper">
+        <div class="selection-set">
+             <label for="model-select">Modelo 3D</label>
+        <select name="model-select" id="model-select">
+            <option value="sphere">Sphere</option>
+            <option value="david">David</option>
+        </select>
+        </div>
+        <div class="selection-set">
+            <label for="texture-type-select">Textura</label>
+        <select name="texture-type-select" id="texture-type-select">
+            <option value="none">...</option>
+            <option value="all-folded">Tamaño de Pliegos Mixto</option>
+            <option value="big">Tamaño de Pliegos Grande</option>
+            <option value="small">Tamaño de Pliegos Pequeño</option>
+            <option value="rugged">Pliego Entero Arrugado</option>
+        </select>
+        </div>
+        <div class="selection-set">
+            <label for="color-select">Color</label>
+        <select name="color-select" id="color-select">
+            <option value="light">Blanco</option>
+        </select>
         </div>
     </div>
-
-    <!-- Model Section 2 -->
-    <div id="model-container-2" class="model-card">
-        <p>Modelo 2: Pliegos Grandes</p>
+        <div id="model-container-1" class="model-card">
+        <p id="model-name"></p>
         <div class="model-container">
-            <model-viewer src="./assets/sphere-big.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
-            <model-viewer src="./assets/big.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
+            <model-viewer id="model-viewer" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
         </div>
     </div>
-
-    <!-- Model Section 3 -->
-    <div id="model-container-3" class="model-card">
-        <p>Modelo 3: Pliegos Pequeños</p>
-        <div class="model-container">
-            <model-viewer src="./assets/sphere-small.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
-            <model-viewer src="./assets/small.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
-        </div>
-    </div>
-
-    <!-- Model Section 4 -->
-    <div id="model-container-4" class="model-card">
-        <p>Modelo 4: Colores Opuestos</p>
-        <div class="model-container">
-            <model-viewer src="./assets/sphere-big-dark.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
-            <model-viewer src="./assets/dark.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
-        </div>
-    </div>
-
-    <!-- Model Section 5 -->
-    <div id="model-container-5" class="model-card">
-        <p>Modelo 5: Pliego Entero Arrugado</p>
-        <div class="model-container">
-            <model-viewer src="./assets/sphere-rugged.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
-            <model-viewer src="./assets/rugged.glb" shadow-intensity="1" camera-controls touch-action="pan-y" class="models"></model-viewer>
-        </div>
-    </div>
+    
 
 </div>
 
